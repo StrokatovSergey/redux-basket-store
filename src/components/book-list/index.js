@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import BookListItem from '../book-list-item';
+import {connect} from 'react-redux';
 import './style.sass';
 
 class BookList extends Component {
@@ -9,7 +10,7 @@ class BookList extends Component {
             <ul>
                 {
                     books.map((book, index) => (
-                       <li key={index}> <BookListItem book={book}/> </li>
+                       <li key={index} > <BookListItem book={book}/> </li>
                     ))
                 }
             </ul>
@@ -17,4 +18,10 @@ class BookList extends Component {
     }
 }
 
-export default BookList;
+const mapStateToProps = ({books}) => {
+    return {
+        books
+    }
+}
+
+export default connect(mapStateToProps)(BookList);
