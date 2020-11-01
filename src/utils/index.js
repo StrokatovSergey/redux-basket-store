@@ -1,4 +1,5 @@
-export const  compose = (...funcs) => (comp) => {
-    return funcs.reduceRight(
-        (wrapped, fn) => fn(wrapped), comp)
-}
+import compose from './compose';
+
+export {
+  compose
+};

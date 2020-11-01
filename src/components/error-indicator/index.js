@@ -1,12 +1,3 @@
-import React from 'react';
-import './style.sass';
-
-const ErrorIndicator = () => {
-    return (
-        <div>
-            error
-        </div>
-    );
-};
+import ErrorIndicator from './error-indicator';
 
 export default ErrorIndicator;

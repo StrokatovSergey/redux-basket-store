@@ -1,17 +1,3 @@
-import React from 'react';
-
-const Spinner = ({children, isLoaded}) => {
-
-    if (!isLoaded) {
-        return 'loading'
-    }
-
-
-    return (
-        <React.Fragment>
-            {children}
-        </React.Fragment>
-    );
-};
+import Spinner from './spinner';
 
 export default Spinner;
