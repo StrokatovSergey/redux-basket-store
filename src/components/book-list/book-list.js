@@ -8,7 +8,7 @@ import './book-list.css';
 import Spinner from '../spinner';
 import ErrorIndicator from '../error-indicator';
 
-class BookList extends Component {
+class BookListContaner extends Component {
 
   componentDidMount() {
     // 1. receive data
@@ -26,20 +26,28 @@ class BookList extends Component {
         return <ErrorIndicator errMessage={error}/>
     }
 
+    return <BookList {...this.props} />
 
-    return (
-      <ul className="book-list">
-        {
-          books.map((book) => {
-            return (
-              <li key={book.id}><BookListItem book={book}/></li>
-            )
-          })
-        }
-      </ul>
-    );
+
   }
 }
+
+
+const BookList = ({books}) => {
+    return (
+        <ul className="book-list">
+            {
+                books.map((book) => {
+                    return (
+                        <li key={book.id}><BookListItem  /></li>
+                    )
+                })
+            }
+        </ul>
+    );
+};
+
+
 
 const mapStateToProps = ({ books, loading, error }) => {
   return { books, loading, error };
@@ -55,4 +63,4 @@ const mapDispatchToProps = (dispatch, ownProps) => {
 export default compose(
   withBookstoreService(),
   connect(mapStateToProps, mapDispatchToProps)
-)(BookList);
+)(BookListContaner);
