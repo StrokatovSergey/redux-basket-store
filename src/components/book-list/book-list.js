@@ -39,7 +39,7 @@ const BookList = ({books}) => {
             {
                 books.map((book) => {
                     return (
-                        <li key={book.id}><BookListItem  /></li>
+                        <li key={book.id}><BookListItem book={book}/></li>
                     )
                 })
             }
