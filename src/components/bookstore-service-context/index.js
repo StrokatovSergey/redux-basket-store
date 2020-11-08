@@ -7,4 +7,3 @@ export {
   BookstoreServiceProvider,
   BookstoreServiceConsumer
 };
-
