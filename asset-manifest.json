@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/StrokatovSergey/redux-basket-store/static/css/main.9353f82b.chunk.css",
+    "main.js": "/StrokatovSergey/redux-basket-store/static/js/main.7938614f.chunk.js",
+    "main.js.map": "/StrokatovSergey/redux-basket-store/static/js/main.7938614f.chunk.js.map",
+    "runtime-main.js": "/StrokatovSergey/redux-basket-store/static/js/runtime-main.c2bca419.js",
+    "runtime-main.js.map": "/StrokatovSergey/redux-basket-store/static/js/runtime-main.c2bca419.js.map",
+    "static/js/2.ccc28c10.chunk.js": "/StrokatovSergey/redux-basket-store/static/js/2.ccc28c10.chunk.js",
+    "static/js/2.ccc28c10.chunk.js.map": "/StrokatovSergey/redux-basket-store/static/js/2.ccc28c10.chunk.js.map",
+    "index.html": "/StrokatovSergey/redux-basket-store/index.html",
+    "static/css/main.9353f82b.chunk.css.map": "/StrokatovSergey/redux-basket-store/static/css/main.9353f82b.chunk.css.map",
+    "static/js/2.ccc28c10.chunk.js.LICENSE.txt": "/StrokatovSergey/redux-basket-store/static/js/2.ccc28c10.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c2bca419.js",
+    "static/js/2.ccc28c10.chunk.js",
+    "static/css/main.9353f82b.chunk.css",
+    "static/js/main.7938614f.chunk.js"
+  ]
+}
